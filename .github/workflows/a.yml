@@ -1,0 +1,17 @@
+name: GLaDOS Auto Checkin
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/2 * * * *'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+      - run: ls
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node --version
