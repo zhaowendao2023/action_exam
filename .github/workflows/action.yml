@@ -3,7 +3,7 @@ name: GLaDOS Auto Checkin
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/2 * * * *'
 
 jobs:
   job1:
