@@ -3,10 +3,12 @@ name: GLaDOS Auto Checkin
 on: push
 
 jobs:
+  checkin:
+    runs-on: ubuntu-latest
   job1:
     steps:
-    - run: pwd
-    - run: ls
+      - run: pwd
+      - run: ls
   job2:
     steps:
-    - run: node --version
+      - run: node --version
