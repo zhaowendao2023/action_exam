@@ -1,6 +1,9 @@
 name: GLaDOS Auto Checkin
 
-on: push
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 * * * *'
 
 jobs:
   job1:
